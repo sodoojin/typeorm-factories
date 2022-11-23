@@ -1,6 +1,6 @@
 {
   "name": "typeorm-entity-generator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Factories for your TypeORM Entities",
   "main": "./src/index.ts",
   "scripts": {
