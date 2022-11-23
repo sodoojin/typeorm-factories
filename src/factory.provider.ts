@@ -1,6 +1,9 @@
 import * as glob from "glob";
 import * as path from "path";
 
+// const factories = this.provider.loadFiles(["**/*.factory{.js,.ts}"]);
+// this.provider.importFiles(factories);
+
 export class FactoryProvider {
   loadFiles(filePattern: string[]): string[] {
     return filePattern

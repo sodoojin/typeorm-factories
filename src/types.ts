@@ -1,4 +1,3 @@
-import * as Faker from "faker";
 import { ObjectType } from "typeorm";
 import { EntityFactory } from "./factory.util";
 
@@ -6,7 +5,6 @@ import { EntityFactory } from "./factory.util";
  * FactoryFunction is the function, which generate a new filled entity
  */
 export type FactoryFunction<Entity, Settings> = (
-  faker: typeof Faker,
   settings?: Settings
 ) => Entity;
 

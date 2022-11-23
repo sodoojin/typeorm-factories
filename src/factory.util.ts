@@ -1,5 +1,4 @@
-import * as Faker from "faker";
-import { ObjectType, Repository } from "typeorm";
+import { ObjectType } from "typeorm";
 import {
   EntityFactoryDefinition,
   EntityProperty,
@@ -42,7 +41,7 @@ export const getNameOfEntity = <T>(entity: ObjectType<T>): string => {
   } else if (entity) {
     return new (entity as any)().constructor.name;
   }
-  throw new Error("Enity is not defined");
+  throw new Error("Entity is not defined");
 };
 
 export const isPromiseLike = (o: any): boolean =>
@@ -72,7 +71,7 @@ export class EntityFactory<Entity, Settings> {
     overrideParams: EntityProperty<Entity> = {}
   ): Promise<Entity> {
     if (this.factory) {
-      let entity = await this.resolveEntity(this.factory(Faker, this.settings));
+      let entity: any = await this.resolveEntity(this.factory(this.settings));
       if (this.mapFunction) {
         entity = await this.mapFunction(entity);
       }
