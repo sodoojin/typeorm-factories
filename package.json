@@ -1,6 +1,6 @@
 {
-  "name": "typeorm-factories",
-  "version": "1.0.1",
+  "name": "typeorm-entity-generator",
+  "version": "1.0.0",
   "description": "Factories for your TypeORM Entities",
   "main": "index.js",
   "scripts": {
@@ -22,11 +22,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/owl1n/typeorm-factories"
+    "url": "https://github.com/sodoojin/typeorm-factories"
   },
   "author": {
-    "name": "Markin Maxim",
-    "email": "mxrkin@yandex.ru"
+    "name": "doojin, so",
+    "email": "visualplus@daum.net"
   },
   "license": "MIT",
   "dependencies": {
